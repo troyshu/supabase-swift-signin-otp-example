@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F2753142A7DAAD300697D55 /* SignInOTPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2753132A7DAAD300697D55 /* SignInOTPApp.swift */; };
+		2F2753162A7DAAD300697D55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2753152A7DAAD300697D55 /* ContentView.swift */; };
+		2F2753182A7DAAD500697D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F2753172A7DAAD500697D55 /* Assets.xcassets */; };
+		2F27531B2A7DAAD500697D55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F27531A2A7DAAD500697D55 /* Preview Assets.xcassets */; };
+		2F2753252A7DAAD500697D55 /* SignInOTPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2753242A7DAAD500697D55 /* SignInOTPTests.swift */; };
+		2F27532F2A7DAAD500697D55 /* SignInOTPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F27532E2A7DAAD500697D55 /* SignInOTPUITests.swift */; };
+		2F2753312A7DAAD500697D55 /* SignInOTPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2753302A7DAAD500697D55 /* SignInOTPUITestsLaunchTests.swift */; };
+		2F27533F2A7DAB4D00697D55 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 2F27533E2A7DAB4D00697D55 /* Supabase */; };
+		2F2753412A7DABBF00697D55 /* _Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2753402A7DABBF00697D55 /* _Secrets.swift */; };
+		2F2753432A7DAC5D00697D55 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2753422A7DAC5D00697D55 /* AuthController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F2753212A7DAAD500697D55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F2753082A7DAAD300697D55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F27530F2A7DAAD300697D55;
+			remoteInfo = SignInOTP;
+		};
+		2F27532B2A7DAAD500697D55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F2753082A7DAAD300697D55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F27530F2A7DAAD300697D55;
+			remoteInfo = SignInOTP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F2753102A7DAAD300697D55 /* SignInOTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignInOTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F2753132A7DAAD300697D55 /* SignInOTPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInOTPApp.swift; sourceTree = "<group>"; };
+		2F2753152A7DAAD300697D55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2F2753172A7DAAD500697D55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F27531A2A7DAAD500697D55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2F2753202A7DAAD500697D55 /* SignInOTPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignInOTPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F2753242A7DAAD500697D55 /* SignInOTPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInOTPTests.swift; sourceTree = "<group>"; };
+		2F27532A2A7DAAD500697D55 /* SignInOTPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignInOTPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F27532E2A7DAAD500697D55 /* SignInOTPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInOTPUITests.swift; sourceTree = "<group>"; };
+		2F2753302A7DAAD500697D55 /* SignInOTPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInOTPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2F2753402A7DABBF00697D55 /* _Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Secrets.swift; sourceTree = "<group>"; };
+		2F2753422A7DAC5D00697D55 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
+		2F2753442A7DAE9800697D55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F27530D2A7DAAD300697D55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F27533F2A7DAB4D00697D55 /* Supabase in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F27531D2A7DAAD500697D55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F2753272A7DAAD500697D55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F2753072A7DAAD300697D55 = {
+			isa = PBXGroup;
+			children = (
+				2F2753122A7DAAD300697D55 /* SignInOTP */,
+				2F2753232A7DAAD500697D55 /* SignInOTPTests */,
+				2F27532D2A7DAAD500697D55 /* SignInOTPUITests */,
+				2F2753112A7DAAD300697D55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F2753112A7DAAD300697D55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F2753102A7DAAD300697D55 /* SignInOTP.app */,
+				2F2753202A7DAAD500697D55 /* SignInOTPTests.xctest */,
+				2F27532A2A7DAAD500697D55 /* SignInOTPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F2753122A7DAAD300697D55 /* SignInOTP */ = {
+			isa = PBXGroup;
+			children = (
+				2F2753442A7DAE9800697D55 /* Info.plist */,
+				2F2753132A7DAAD300697D55 /* SignInOTPApp.swift */,
+				2F2753152A7DAAD300697D55 /* ContentView.swift */,
+				2F2753172A7DAAD500697D55 /* Assets.xcassets */,
+				2F2753192A7DAAD500697D55 /* Preview Content */,
+				2F2753402A7DABBF00697D55 /* _Secrets.swift */,
+				2F2753422A7DAC5D00697D55 /* AuthController.swift */,
+			);
+			path = SignInOTP;
+			sourceTree = "<group>";
+		};
+		2F2753192A7DAAD500697D55 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2F27531A2A7DAAD500697D55 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2F2753232A7DAAD500697D55 /* SignInOTPTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F2753242A7DAAD500697D55 /* SignInOTPTests.swift */,
+			);
+			path = SignInOTPTests;
+			sourceTree = "<group>";
+		};
+		2F27532D2A7DAAD500697D55 /* SignInOTPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2F27532E2A7DAAD500697D55 /* SignInOTPUITests.swift */,
+				2F2753302A7DAAD500697D55 /* SignInOTPUITestsLaunchTests.swift */,
+			);
+			path = SignInOTPUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F27530F2A7DAAD300697D55 /* SignInOTP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F2753342A7DAAD500697D55 /* Build configuration list for PBXNativeTarget "SignInOTP" */;
+			buildPhases = (
+				2F27530C2A7DAAD300697D55 /* Sources */,
+				2F27530D2A7DAAD300697D55 /* Frameworks */,
+				2F27530E2A7DAAD300697D55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SignInOTP;
+			packageProductDependencies = (
+				2F27533E2A7DAB4D00697D55 /* Supabase */,
+			);
+			productName = SignInOTP;
+			productReference = 2F2753102A7DAAD300697D55 /* SignInOTP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F27531F2A7DAAD500697D55 /* SignInOTPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F2753372A7DAAD500697D55 /* Build configuration list for PBXNativeTarget "SignInOTPTests" */;
+			buildPhases = (
+				2F27531C2A7DAAD500697D55 /* Sources */,
+				2F27531D2A7DAAD500697D55 /* Frameworks */,
+				2F27531E2A7DAAD500697D55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F2753222A7DAAD500697D55 /* PBXTargetDependency */,
+			);
+			name = SignInOTPTests;
+			productName = SignInOTPTests;
+			productReference = 2F2753202A7DAAD500697D55 /* SignInOTPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2F2753292A7DAAD500697D55 /* SignInOTPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F27533A2A7DAAD500697D55 /* Build configuration list for PBXNativeTarget "SignInOTPUITests" */;
+			buildPhases = (
+				2F2753262A7DAAD500697D55 /* Sources */,
+				2F2753272A7DAAD500697D55 /* Frameworks */,
+				2F2753282A7DAAD500697D55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F27532C2A7DAAD500697D55 /* PBXTargetDependency */,
+			);
+			name = SignInOTPUITests;
+			productName = SignInOTPUITests;
+			productReference = 2F27532A2A7DAAD500697D55 /* SignInOTPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F2753082A7DAAD300697D55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					2F27530F2A7DAAD300697D55 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					2F27531F2A7DAAD500697D55 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 2F27530F2A7DAAD300697D55;
+					};
+					2F2753292A7DAAD500697D55 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 2F27530F2A7DAAD300697D55;
+					};
+				};
+			};
+			buildConfigurationList = 2F27530B2A7DAAD300697D55 /* Build configuration list for PBXProject "SignInOTP" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F2753072A7DAAD300697D55;
+			packageReferences = (
+				2F27533D2A7DAB4D00697D55 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
+			productRefGroup = 2F2753112A7DAAD300697D55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F27530F2A7DAAD300697D55 /* SignInOTP */,
+				2F27531F2A7DAAD500697D55 /* SignInOTPTests */,
+				2F2753292A7DAAD500697D55 /* SignInOTPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F27530E2A7DAAD300697D55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F27531B2A7DAAD500697D55 /* Preview Assets.xcassets in Resources */,
+				2F2753182A7DAAD500697D55 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F27531E2A7DAAD500697D55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F2753282A7DAAD500697D55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F27530C2A7DAAD300697D55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F2753162A7DAAD300697D55 /* ContentView.swift in Sources */,
+				2F2753432A7DAC5D00697D55 /* AuthController.swift in Sources */,
+				2F2753412A7DABBF00697D55 /* _Secrets.swift in Sources */,
+				2F2753142A7DAAD300697D55 /* SignInOTPApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F27531C2A7DAAD500697D55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F2753252A7DAAD500697D55 /* SignInOTPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F2753262A7DAAD500697D55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F2753312A7DAAD500697D55 /* SignInOTPUITestsLaunchTests.swift in Sources */,
+				2F27532F2A7DAAD500697D55 /* SignInOTPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F2753222A7DAAD500697D55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F27530F2A7DAAD300697D55 /* SignInOTP */;
+			targetProxy = 2F2753212A7DAAD500697D55 /* PBXContainerItemProxy */;
+		};
+		2F27532C2A7DAAD500697D55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F27530F2A7DAAD300697D55 /* SignInOTP */;
+			targetProxy = 2F27532B2A7DAAD500697D55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2F2753322A7DAAD500697D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F2753332A7DAAD500697D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F2753352A7DAAD500697D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SignInOTP/Preview Content\"";
+				DEVELOPMENT_TEAM = UM893U6VAL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SignInOTP/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beagle.SignInOTP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F2753362A7DAAD500697D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SignInOTP/Preview Content\"";
+				DEVELOPMENT_TEAM = UM893U6VAL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SignInOTP/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beagle.SignInOTP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2F2753382A7DAAD500697D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UM893U6VAL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beagle.SignInOTPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SignInOTP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SignInOTP";
+			};
+			name = Debug;
+		};
+		2F2753392A7DAAD500697D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UM893U6VAL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beagle.SignInOTPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SignInOTP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SignInOTP";
+			};
+			name = Release;
+		};
+		2F27533B2A7DAAD500697D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UM893U6VAL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beagle.SignInOTPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SignInOTP;
+			};
+			name = Debug;
+		};
+		2F27533C2A7DAAD500697D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UM893U6VAL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beagle.SignInOTPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SignInOTP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F27530B2A7DAAD300697D55 /* Build configuration list for PBXProject "SignInOTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F2753322A7DAAD500697D55 /* Debug */,
+				2F2753332A7DAAD500697D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F2753342A7DAAD500697D55 /* Build configuration list for PBXNativeTarget "SignInOTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F2753352A7DAAD500697D55 /* Debug */,
+				2F2753362A7DAAD500697D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F2753372A7DAAD500697D55 /* Build configuration list for PBXNativeTarget "SignInOTPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F2753382A7DAAD500697D55 /* Debug */,
+				2F2753392A7DAAD500697D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F27533A2A7DAAD500697D55 /* Build configuration list for PBXNativeTarget "SignInOTPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F27533B2A7DAAD500697D55 /* Debug */,
+				2F27533C2A7DAAD500697D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2F27533D2A7DAB4D00697D55 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2F27533E2A7DAB4D00697D55 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F27533D2A7DAB4D00697D55 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2F2753082A7DAAD300697D55 /* Project object */;
+}
