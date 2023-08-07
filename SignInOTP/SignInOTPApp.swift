@@ -27,20 +27,14 @@ struct SignInOTPApp: App {
                 .onOpenURL { url in
                     print("App was opened with a URL: \(url)")
                     
-                    guard let params = parseParameters(from: url), let access_token = params["access_token"], let refresh_token = params["refresh_token"] else {
-                        print("Invalid URL params: \(url.absoluteString)")
-                        return
-                    }
-                    
                     Task {
                         do {
-                            try await supabase.auth.setSession(accessToken: access_token, refreshToken: refresh_token)
+                            let session = try await supabase.auth.session(from: url)
+                            print("Session user id: \(session.user.id.uuidString)")
                         } catch {
                             print("Error setting session: \(error)")
                         }
                     }
-                
-                    
                     
                 }
         } else {
